@@ -4,9 +4,10 @@ import { useState } from "react";
 import { TouchableOpacity } from "react-native";
 import logo from "../../../assets/logo.png";
 import { Gradient } from "../../components/Gradient";
-import { Butao, InputLogin, InputPassword, Recover, Title } from "./styles";
+import { Container, Logo, Title, InputLogin, InputPassword, Recover, LoginButton, LoginText } from "./styles";
 
 export default function Login() {
+  
   const [user, setUser] = useState({
     login: '',
     password: '',
@@ -16,6 +17,7 @@ export default function Login() {
   function screenEsqueciMinhaSenha() {
     navigation.navigate("EsqueciMinhaSenha");
   }
+
   return (
     <Container>
       <Gradient />
@@ -26,7 +28,6 @@ export default function Login() {
         onChangeText={setUser}
         placeholder={'Digite seu Login'}
         placeholderTextColor={'gray'}
-        
       />
       <InputPassword
         value={user.password}
@@ -37,9 +38,9 @@ export default function Login() {
       <TouchableOpacity onPress={screenEsqueciMinhaSenha}>
         <Recover>Esqueceu sua senha? Clique aqui</Recover>
       </TouchableOpacity>
-      <Butao>
-        <Entrar>ENTRAR</Entrar>
-      </Butao>
+      <LoginButton>
+        <LoginText>ENTRAR</LoginText>
+      </LoginButton>
       <TouchableOpacity>
         <Recover >Não possui cadastro? Cadastre-se!</Recover>
       </TouchableOpacity>
