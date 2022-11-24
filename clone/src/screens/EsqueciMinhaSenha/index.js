@@ -1,7 +1,7 @@
 import { Text, View } from "react-native";
 import { Gradient } from "../../components/Gradient";
 
-export default function Login() {
+export const EsqueciMinhaSenha = () => {
   return (
     <View >
       <Gradient />

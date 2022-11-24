@@ -66,7 +66,7 @@ const Lista = [
 
 export const Produtos = () => {
 
-    const navigaton = useNavigation();
+    const navigation = useNavigation();
 
     function openScreen() {
         navigation.navigate("CadastroProduto")

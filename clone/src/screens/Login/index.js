@@ -6,7 +6,7 @@ import logo from "../../../assets/logo.png";
 import { Gradient } from "../../components/Gradient";
 import { Container, Logo, Title, InputLogin, InputPassword, Recover, LoginButton, LoginText } from "./styles";
 
-export default function Login() {
+export const Login = () => {
   
   const [user, setUser] = useState({
     login: '',

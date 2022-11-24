@@ -34,19 +34,19 @@ export const Footer = () => {
             </TouchableOpacity>
             <TouchableOpacity onPress={openProdutos}>
             <MaterialCommunityIcons
-          name="bag"
+          name="shopping"
           size={30}
           color={colors.footerIcons} />
             </TouchableOpacity>
             <TouchableOpacity onPress={openFavoritos}>
             <MaterialCommunityIcons
           name="star"
-          size={30}
+          size={35}
           color={colors.footerIcons} />
             </TouchableOpacity>
             <TouchableOpacity onPress={openCarrinho}>
             <MaterialCommunityIcons
-          name="shoppingcart"
+          name="cart"
           size={35}
           color={colors.footerIcons} />
             </TouchableOpacity>
